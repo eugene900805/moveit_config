@@ -1,0 +1,50 @@
+pos_joint_traj_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - mir2/ur5_shoulder_pan_joint
+    - mir2/ur5_shoulder_lift_joint
+    - mir2/ur5_elbow_joint
+    - mir2/ur5_wrist_1_joint
+    - mir2/ur5_wrist_2_joint
+    - mir2/ur5_wrist_3_joint
+  gains:
+    mir2/ur5_shoulder_pan_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    mir2/ur5_shoulder_lift_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    mir2/ur5_elbow_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    mir2/ur5_wrist_1_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    mir2/ur5_wrist_2_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    mir2/ur5_wrist_3_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+gripper_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - mir2/ur5_robotiq_85_left_knuckle_joint
+  gains:
+    mir2/ur5_robotiq_85_left_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

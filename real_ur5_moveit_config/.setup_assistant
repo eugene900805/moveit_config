@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mir_description
+    relative_path: urdf/mir.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/mir.srdf
+  CONFIG:
+    author_name: eugene900805
+    author_email: kyrie900805eugene@gmail.com
+    generated_timestamp: 1749286754

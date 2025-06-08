@@ -1,0 +1,21 @@
+controller_list:
+  - name: fake_manipulator_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - mir/ur5_shoulder_pan_joint
+      - mir/ur5_shoulder_lift_joint
+      - mir/ur5_elbow_joint
+      - mir/ur5_wrist_1_joint
+      - mir/ur5_wrist_2_joint
+      - mir/ur5_wrist_3_joint
+  - name: fake_gripper_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - mir/ur5_robotiq_85_left_knuckle_joint
+      - mir/ur5_robotiq_85_left_finger_joint
+      - mir/ur5_robotiq_85_right_finger_joint
+initial:  # Define initial robot poses per group
+#  - group: manipulator
+#    pose: home
+
+  []
