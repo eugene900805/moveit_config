@@ -37,6 +37,16 @@
         <link name="ur5_robotiq_85_right_finger_link"/>
         <joint name="ur5_robotiq_85_left_knuckle_joint"/>
     </group>
+    <group_state name="open" group="gripper">
+        <joint name="ur5_robotiq_85_left_finger_joint" value="0"/>
+        <joint name="ur5_robotiq_85_left_knuckle_joint" value="0"/>
+        <joint name="ur5_robotiq_85_right_finger_joint" value="0"/>
+    </group_state>
+    <group_state name="close" group="gripper">
+        <joint name="ur5_robotiq_85_left_finger_joint" value="0"/>
+        <joint name="ur5_robotiq_85_left_knuckle_joint" value="0.8"/>
+        <joint name="ur5_robotiq_85_right_finger_joint" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="ur5_tool0" group="gripper"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
